@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body">
+      <button id="sidebarToggle" class="sidebar-toggle">Menu</button>
+
+      <aside id="sidebar" class="sidebar">
+        <nav class="sidebar__nav">
+          <div class="sidebar__logo">
+            <div class="sidebar__logo-container">
+              <svg
+                class="sidebar__logo-icon"
+                width="37"
+                height="37"
+                aria-label="dashboard icon"
+              >
+                <use href="img/icons/symbol.svg#icon-logo" />
+              </svg>
+              <h2 class="sidebar__logo-title">Dashboard</h2>
+            </div>
+            <p class="sidebar__logo-title--small">v.01</p>
+          </div>
+          <ul class="sidebar__menu">
+            <li class="sidebar__menu-item">
+              <a href="#" class="sidebar__menu-link">
+                <span class="sidebar__menu-link-container">
+                  <svg
+                    class="sidebar__menu-link__icon"
+                    width="24"
+                    height="24"
+                    aria-label="dashboard icon"
+                  >
+                    <use href="img/icons/symbol.svg#icon-dashboard" />
+                  </svg>
+                  <span>Dashboard</span>
+                </span>
+              </a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="sidebar__menu-link">
+                <span class="sidebar__menu-link-container">
+                  <svg
+                    class="sidebar__menu-link__icon"
+                    width="24"
+                    height="24"
+                    aria-label="dashboard icon"
+                  >
+                    <use href="img/icons/symbol.svg#icon-product" />
+                  </svg>
+                  <span>Product</span>
+                </span>
+                <svg
+                  class="sidebar__menu-link__icon"
+                  width="16"
+                  height="16"
+                  aria-label="dashboard icon"
+                >
+                  <use href="img/icons/symbol.svg#icon-arrow" />
+                </svg>
+              </a>
+            </li>
+            <li class="sidebar__menu-item sidebar__menu-item--active">
+              <a href="#" class="sidebar__menu-link">
+                <span class="sidebar__menu-link-container">
+                  <svg
+                    class="sidebar__menu-link__icon"
+                    width="24"
+                    height="24"
+                    aria-label="dashboard icon"
+                  >
+                    <use href="img/icons/symbol.svg#icon-customers" />
+                  </svg>
+                  <span>Customers</span>
+                </span>
+                <svg
+                  class="sidebar__menu-link__icon"
+                  width="16"
+                  height="16"
+                  aria-label="dashboard icon"
+                >
+                  <use href="img/icons/symbol.svg#icon-arrow-white" />
+                </svg>
+              </a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="sidebar__menu-link">
+                <span class="sidebar__menu-link-container">
+                  <svg
+                    class="sidebar__menu-link__icon"
+                    width="24"
+                    height="24"
+                    aria-label="dashboard icon"
+                  >
+                    <use href="img/icons/symbol.svg#icon-income" />
+                  </svg>
+                  <span>Income</span>
+                </span>
+                <svg
+                  class="sidebar__menu-link__icon"
+                  width="16"
+                  height="16"
+                  aria-label="dashboard icon"
+                >
+                  <use href="img/icons/symbol.svg#icon-arrow" />
+                </svg>
+              </a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="sidebar__menu-link">
+                <span class="sidebar__menu-link-container">
+                  <svg
+                    class="sidebar__menu-link__icon"
+                    width="24"
+                    height="24"
+                    aria-label="dashboard icon"
+                  >
+                    <use href="img/icons/symbol.svg#icon-promote" />
+                  </svg>
+                  <span>Promote</span>
+                </span>
+                <svg
+                  class="sidebar__menu-link__icon"
+                  width="16"
+                  height="16"
+                  aria-label="dashboard icon"
+                >
+                  <use href="img/icons/symbol.svg#icon-arrow" />
+                </svg>
+              </a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="sidebar__menu-link">
+                <span class="sidebar__menu-link-container">
+                  <svg
+                    class="sidebar__menu-link__icon"
+                    width="24"
+                    height="24"
+                    aria-label="dashboard icon"
+                  >
+                    <use href="img/icons/symbol.svg#icon-help" />
+                  </svg>
+                  <span>Help</span>
+                </span>
+                <svg
+                  class="sidebar__menu-link__icon"
+                  width="16"
+                  height="16"
+                  aria-label="dashboard icon"
+                >
+                  <use href="img/icons/symbol.svg#icon-arrow" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar__user">
+          <div class="sidebar__user-info">
+            <p class="sidebar__user-name">Evano</p>
+            <p class="sidebar__user-role">Project Manager</p>
+          </div>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="dashboard">
+          <h1 class="dashboard__title">Hello Evano 👋🏻,</h1>
+
+          <div class="customer-list">
+            <div class="customer-list__header">
+              <div class="customer-list__header-container">
+                <h2 class="customer-list__title">All Customers</h2>
+                <span class="customer-list__subtitle">Active Members</span>
+              </div>
+              <div class="customer-list__search">
+                <svg
+                  class="customer-list__search-icon"
+                  width="24"
+                  height="24"
+                  aria-label="search icon"
+                >
+                  <use href="img/icons/symbol.svg#icon-search" />
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="customer-list__search-input"
+                />
+              </div>
+            </div>
+
+            <table class="customer-table">
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td><span class="status status--active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td>(205) 555-0100</td>
+                  <td>floyd@yahoo.com</td>
+                  <td>Kiribati</td>
+                  <td><span class="status status--inactive">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td>(302) 555-0107</td>
+                  <td>ronald@adobe.com</td>
+                  <td>Israel</td>
+                  <td><span class="status status--inactive">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td>(252) 555-0126</td>
+                  <td>marvin@tesla.com</td>
+                  <td>Iran</td>
+                  <td><span class="status status--active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Jerome Bell</td>
+                  <td>Google</td>
+                  <td>(629) 555-0129</td>
+                  <td>jerome@google.com</td>
+                  <td>Réunion</td>
+                  <td><span class="status status--active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Kathryn Murphy</td>
+                  <td>Microsoft</td>
+                  <td>(406) 555-0120</td>
+                  <td>kathryn@microsoft.com</td>
+                  <td>Curaçao</td>
+                  <td><span class="status status--active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Jacob Jones</td>
+                  <td>Yahoo</td>
+                  <td>(208) 555-0112</td>
+                  <td>jacob@yahoo.com</td>
+                  <td>Brazil</td>
+                  <td><span class="status status--active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Kristin Watson</td>
+                  <td>Facebook</td>
+                  <td>(704) 555-0127</td>
+                  <td>kristin@facebook.com</td>
+                  <td>Åland Islands</td>
+                  <td><span class="status status--inactive">Inactive</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="pagination">
+              <span class="pagination__info"
+                >Showing data 1 to 8 of 256K entries</span
+              >
+              <div class="pagination__controls">
+                <button class="pagination__button"><</button>
+                <button class="pagination__button pagination__button--active">
+                  1
+                </button>
+                <button class="pagination__button">2</button>
+                <button class="pagination__button">3</button>
+                <button class="pagination__button">4</button>
+                <span class="pagination__ellipsis">...</span>
+                <button class="pagination__button">40</button>
+                <button class="pagination__button">></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sidebar = document.getElementById("sidebar");
+        const sidebarToggle = document.getElementById("sidebarToggle");
+        const dashboard = document.querySelector(".dashboard");
+
+        sidebarToggle.addEventListener("click", () => {
+          sidebar.classList.toggle("is-open");
+        });
+
+        // Close sidebar when clicking outside of it
+        document.addEventListener("click", (event) => {
+          if (
+            !sidebar.contains(event.target) &&
+            !sidebarToggle.contains(event.target) &&
+            sidebar.classList.contains("is-open")
+          ) {
+            sidebar.classList.remove("is-open");
+          }
+        });
+
+        // Adjust layout on window resize
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 1219) {
+            sidebar.classList.remove("is-open");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
